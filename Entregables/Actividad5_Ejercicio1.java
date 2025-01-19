@@ -6,7 +6,8 @@ public class Actividad5_Ejercicio1 {
 
     /*Ejercicio 1: Sobrecarga de Funciones para Media, Moda y Mediana.
     *
-    *Descripción: Crea un programa que implemente una función sobrecargada llamada "calcular" que realice las siguientes operaciones dependiendo del tipo de parámetro recibido:
+    *Descripción: Crea un programa que implemente una función sobrecargada llamada "calcular" 
+    *que realice las siguientes operaciones dependiendo del tipo de parámetro recibido:
     *
     *Media (int[]): Calcula la media de un arreglo de números enteros.
     *Moda (double[]): Encuentra el valor más frecuente en un arreglo de números decimales.
@@ -17,6 +18,18 @@ public class Actividad5_Ejercicio1 {
     *Implementa tres versiones de la función "calcular" para manejar enteros, decimales y cadenas.
     *Muestra ejemplos para cada caso.
      */
+
+     /*
+     *---------------------------------------------------------------------------------------------------------------------------
+     Commit: Se graban los cambios hechos en el proyecto de forma local, 
+     estos cambios no se ven reflejados en el repositorio de forma inmediata, para ello se debe hacer un push.
+     Push: Se cargan los cambios hechos en el proyecto y grabados de forma loca al repositorio git.
+     De este modo los cambios realizados ahora pueden ser vistos por todos aquellos que tengan acceso al repositorio git.
+     Pull: Se cargan al equipo (local) los cambios hecho por ti u otros usuarios que empleen el repositorio
+     y que no se encuentren reflejados en mi equipo. Entiendo que ya sea que hayan o no cambios en el archivo del repositorio, se carga
+     el archivo tal como se encuentra en ese momento en el repositorio a mi equipo para trabajarlo.
+      *--------------------------------------------------------------------------------------------------------------------------
+      */
 
     public static void main(String[] args) {
         int[] enteros = {1, 20, 10, 5};
