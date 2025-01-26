@@ -1,3 +1,5 @@
+package ProyectoInicial.src;
+
 public class EjemploFunciones02 {
     public static void main(String[] args) {
         System.out.println(esPrimo(70));

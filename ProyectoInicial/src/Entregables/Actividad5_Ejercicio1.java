@@ -1,4 +1,4 @@
-package Entregables;
+package ProyectoInicial.src.Entregables;
 
 import java.util.Arrays;
 

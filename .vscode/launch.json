@@ -1,0 +1,154 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "BatallaNaval",
+            "request": "launch",
+            "mainClass": "ProyectoInicial.src.Entregables.BatallaNaval",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ProyectoObjeto.src.App",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "BatallaNaval",
+            "request": "launch",
+            "mainClass": "BatallaNaval",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "Calculadora",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Comparador_edades_y_descuento",
+            "request": "launch",
+            "mainClass": "Comparador_edades_y_descuento",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "EjemploFunciones01",
+            "request": "launch",
+            "mainClass": "EjemploFunciones01",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "EjemploFunciones02",
+            "request": "launch",
+            "mainClass": "EjemploFunciones02",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "EjemploFunciones03",
+            "request": "launch",
+            "mainClass": "EjemploFunciones03",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Duda",
+            "request": "launch",
+            "mainClass": "Ejercicio_Recursividad.Duda",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio1",
+            "request": "launch",
+            "mainClass": "Ejercicio_Recursividad.Ejercicio1",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio2",
+            "request": "launch",
+            "mainClass": "Ejercicio_Recursividad.Ejercicio2",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio6",
+            "request": "launch",
+            "mainClass": "Ejercicio_Recursividad.Ejercicio6",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio7",
+            "request": "launch",
+            "mainClass": "Ejercicio_Recursividad.Ejercicio7",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio8",
+            "request": "launch",
+            "mainClass": "Ejercicio_Recursividad.Ejercicio8",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Actividad5_Ejercicio1",
+            "request": "launch",
+            "mainClass": "Entregables.Actividad5_Ejercicio1",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Actividad5_Ejercicio2",
+            "request": "launch",
+            "mainClass": "Entregables.Actividad5_Ejercicio2",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "MenuInteractivo",
+            "request": "launch",
+            "mainClass": "MenuInteractivo",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "SumadorNumeros",
+            "request": "launch",
+            "mainClass": "SumadorNumeros",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "TablaMultiplicar",
+            "request": "launch",
+            "mainClass": "TablaMultiplicar",
+            "projectName": "Java_Upgrade_404824dd"
+        }
+    ]
+}

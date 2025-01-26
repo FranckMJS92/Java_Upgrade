@@ -1,4 +1,4 @@
-package Ejercicio_Recursividad;
+package ProyectoInicial.src.Ejercicio_Recursividad;
 
 public class Duda {
     

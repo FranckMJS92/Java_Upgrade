@@ -1,4 +1,4 @@
-package Ejercicio_Recursividad;
+package ProyectoInicial.src.Ejercicio_Recursividad;
 
 public class Ejercicio6 {
     public static void main(String[] args) {
