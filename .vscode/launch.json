@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ejercicio9",
+            "request": "launch",
+            "mainClass": "ProyectoInicial.src.Ejercicio_Recursividad.Ejercicio9",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio5",
+            "request": "launch",
+            "mainClass": "ProyectoInicial.src.Ejercicio_Recursividad.Ejercicio5",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio4",
+            "request": "launch",
+            "mainClass": "ProyectoInicial.src.Ejercicio_Recursividad.Ejercicio4",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio3",
+            "request": "launch",
+            "mainClass": "ProyectoInicial.src.Ejercicio_Recursividad.Ejercicio3",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
             "name": "Actividad5_Ejercicio2",
             "request": "launch",
             "mainClass": "ProyectoInicial.src.Entregables.Actividad5_Ejercicio2",
