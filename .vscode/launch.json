@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Actividad5_Ejercicio2",
+            "request": "launch",
+            "mainClass": "ProyectoInicial.src.Entregables.Actividad5_Ejercicio2",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
             "name": "BatallaNaval",
             "request": "launch",
             "mainClass": "ProyectoInicial.src.Entregables.BatallaNaval",

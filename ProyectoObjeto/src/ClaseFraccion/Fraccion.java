@@ -103,7 +103,9 @@ public class Fraccion {
      *
      * @return una representación de cadena de la fracción
      */
+    @Override
     public String toString() {
-        return numerador + "/" + denominador;
+        //return numerador + "/" + denominador;
+        return (denominador ==1 ) ? String.valueOf(denominador) : numerador + "/" + denominador;
     }
 }

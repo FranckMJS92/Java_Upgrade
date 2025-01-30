@@ -25,7 +25,7 @@ public class Actividad5_Ejercicio2 {
 
     public static int combinaciones(int n, int k){
         if(k==0 || n==k ) return 1;
-        if(k==1) return n;
+        //if(k==1) return n;
         return combinaciones(n-1, k-1)+combinaciones(n-1,k);
     }
 }
