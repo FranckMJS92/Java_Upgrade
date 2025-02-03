@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ejercicio11",
+            "request": "launch",
+            "mainClass": "ProyectoInicial.src.Ejercicio_Recursividad.Ejercicio11",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio10",
+            "request": "launch",
+            "mainClass": "ProyectoInicial.src.Ejercicio_Recursividad.Ejercicio10",
+            "projectName": "Java_Upgrade_404824dd"
+        },
+        {
+            "type": "java",
             "name": "Ejercicio9",
             "request": "launch",
             "mainClass": "ProyectoInicial.src.Ejercicio_Recursividad.Ejercicio9",

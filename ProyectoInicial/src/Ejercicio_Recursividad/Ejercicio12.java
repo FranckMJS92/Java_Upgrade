@@ -8,4 +8,14 @@ package ProyectoInicial.src.Ejercicio_Recursividad;
 
 public class Ejercicio12 {
 
+    public static void main(String[] args) {
+        String cadena = "abc";
+        System.out.println(permutaString(cadena));
+    }
+
+    public static String permutaString(String cad) {
+
+        return "a";
+    }
+
 }
