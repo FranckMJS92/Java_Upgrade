@@ -1,29 +1,21 @@
 package ProyectoObjeto.src.ClaseFraccion;
 
 /**
- * Clase que representa una fracción con numerador y denominador.
- * Demuestra el uso de la programación orientada a objetos en Java.
- * Incluye atributos, un constructor, métodos de acceso (getters y setters)
- * y un método para mostrar información.
+ * Clase Fraccion que representa una fracción matemática.
+ * Permite la creación y manipulación de fracciones, asegurando la validez del
+ * denominador.
+ * Si el denominador es negativo, la fracción se normaliza para que el
+ * denominador sea siempre positivo.
  * 
- * @author Francisco Adolfo Lopez Monrroy
- * @version 1.0
- * @fecha 2025-01-26
+ * @author Andrés
+ * @version 1.1
  */
 public class Fraccion {
-    /**
-     * El numerador de la fracción.
-     */
     private int numerador;
-
-    /*
-     * El denominador de la fracción.
-     */
     private int denominador;
 
-    /*Constructor de la clase Fraccion sin parametros.
-     * Permite inicializar el numerador en cero 
-     * y el denominador de la fracción en 1.
+    /**
+     * Constructor sin parámetros que inicializa la fracción como 0/1.
      */
     public Fraccion() {
         this.numerador = 0;
@@ -31,27 +23,34 @@ public class Fraccion {
     }
 
     /**
-     * Constructor de la clase Fraccion.
-     *
-     * @param numerador   El numeroador de la fraccion.
-     * @param denominador El denominador de la fraccion. Que no debe ser cero!
+     * Constructor que recibe numerador y denominador, asegurando que el denominador
+     * no sea 0.
+     * Si el denominador es negativo, se normaliza haciéndolo positivo y cambiando
+     * el signo del numerador.
      * 
-     * Si el denominador es cero, se imprime un mensaje de error
-     * indicando que el denominador debe ser distinto de cero.
+     * @param numerador   El numerador de la fracción.
+     * @param denominador El denominador de la fracción (no puede ser 0).
+     * @throws IllegalArgumentException si el denominador es 0.
      */
     public Fraccion(int numerador, int denominador) {
-        this.numerador = numerador;
-
         if (denominador == 0) {
-            System.out.println("El denominador debe ser distinto de 0.");
-        } else
+            throw new IllegalArgumentException("El denominador no puede ser 0."); // He añadido lo del error para que
+                                                                                  // empecemos a aprender a usarlos.
+        }
+        if (denominador < 0) {
+            this.numerador = -numerador;
+            this.denominador = -denominador;
+        } else {
+            this.numerador = numerador;
             this.denominador = denominador;
+        }
+        simplificar();
     }
 
     /**
-     * Constructor de la clase Fraccion con un numerador especifico y un denominador por defecto igual a 1.
-     *
-     * @param numerador el numerador de la fracción.
+     * Constructor que recibe solo el numerador y asume que el denominador es 1.
+     * 
+     * @param numerador El numerador de la fracción.
      */
     public Fraccion(int numerador) {
         this.numerador = numerador;
@@ -59,53 +58,108 @@ public class Fraccion {
     }
 
     /**
-     * Actualiza el numerador de la fracción.
-     *
-     * @param numerador el valor del numerador.
-     */
-    public void setNumerador(int numerador) {
-        this.numerador = numerador;
-    }
-
-    /**
-     * Actualiza el denominador de la fracción.
-     * Si el denominador proporcionado es cero, se imprime un mensaje de error y no se establece el denominador.
-     *
-     * @param denominador el valor a establecer como denominador. No debe ser cero.
-     */
-    public void setDenominador(int denominador) {
-        if (denominador == 0) {
-            System.out.println("El denominador debe ser distinto de 0.");
-        } else
-            this.denominador = denominador;
-    }
-
-    /**
-     * Devuelve el numerador de la fracción.
-     *
-     * @return el numerador como un número entero
+     * Obtiene el numerador de la fracción.
+     * 
+     * @return El numerador actual.
      */
     public int getNumerador() {
         return numerador;
     }
 
     /**
-     * Devuelve el denominador de la fracción.
-     *
-     * @return el denominador como un número entero
+     * Establece un nuevo valor para el numerador.
+     * 
+     * @param numerador El nuevo numerador.
+     */
+    public void setNumerador(int numerador) {
+        this.numerador = numerador;
+    }
+
+    /**
+     * Obtiene el denominador de la fracción.
+     * 
+     * @return El denominador actual.
      */
     public int getDenominador() {
         return denominador;
     }
 
     /**
-     * Devuelve una representación de cadena de la fracción en el formato "numerador/denominador".
-     *
-     * @return una representación de cadena de la fracción
+     * Establece un nuevo valor para el denominador, asegurando que no sea 0.
+     * Si el denominador es negativo, se normaliza haciéndolo positivo y cambiando
+     * el signo del numerador.
+     * 
+     * @param denominador El nuevo denominador (no puede ser 0).
+     * @throws IllegalArgumentException si el denominador es 0.
      */
-    @Override
+    public void setDenominador(int denominador) {
+        if (denominador == 0) {
+            throw new IllegalArgumentException("El denominador no puede ser 0.");
+        }
+        if (denominador < 0) {
+            this.numerador = -this.numerador;
+            this.denominador = -denominador;
+        } else {
+            this.denominador = denominador;
+        }
+    }
+
+    /**
+     * Devuelve la representación en cadena de la fracción en formato
+     * "numerador/denominador".
+     * Si el denominador es 1, solo muestra el numerador.
+     * 
+     * @return La fracción en formato de texto.
+     */
+    @Override // No es necesario, pero ayuda a asegurar que estés de verdad sobreescribiendo
+              // la función de la clase Object que comentamos ayer.
     public String toString() {
-        //return numerador + "/" + denominador;
-        return (denominador ==1 ) ? String.valueOf(denominador) : numerador + "/" + denominador;
+        return (denominador == 1) ? String.valueOf(numerador) : numerador + "/" + denominador;
+    }
+
+    /**
+     * Calculates the greatest common divisor (GCD) of two integers using the Euclidean algorithm.
+     *
+     * @param a the first integer
+     * @param b the second integer
+     * @return the greatest common divisor of the two integers
+     */
+    private int calcularMCD(int a, int b) {
+        while (b != 0) {
+            int temporal = b;
+            b = a % b;
+            a = temporal;
+        }
+        return a;
+    }
+
+    public void simplificar() {
+        int mcd = calcularMCD(Math.abs(numerador), Math.abs(denominador));
+        numerador /= mcd;
+        denominador /= mcd;
+    }
+
+    public Fraccion sumar(Fraccion otraFraccion){
+        int nuevoNumerador = this.numerador*otraFraccion.denominador + otraFraccion.numerador*this.denominador;
+        int nuevoDenominador = this.denominador*otraFraccion.denominador;
+        return (new Fraccion(nuevoNumerador,nuevoDenominador));
+    }
+
+    public Fraccion restar(Fraccion otraFraccion){
+        int nuevoNumerador = this.numerador*otraFraccion.denominador - otraFraccion.numerador*this.denominador;
+        int nuevoDenominador = this.denominador*otraFraccion.denominador;
+        return (new Fraccion(nuevoNumerador,nuevoDenominador));
+    }
+
+    public Fraccion multiplicar(Fraccion otraFraccion){
+        int nuevoNumerador = this.numerador*otraFraccion.numerador;
+        int nuevoDenominador = this.denominador*otraFraccion.denominador;
+        return (new Fraccion(nuevoNumerador,nuevoDenominador));
+    }
+
+    public Fraccion dividir(Fraccion otraFraccion){
+        int nuevoNumerador = this.numerador*otraFraccion.denominador;
+        int nuevoDenominador = this.denominador*otraFraccion.numerador;
+        return (new Fraccion(nuevoNumerador,nuevoDenominador));
     }
 }

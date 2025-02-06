@@ -5,6 +5,17 @@ package ProyectoInicial.src.Ejercicio_Recursividad;
 *  Implementa la solución al problema clásico de la Torre de Hanói para \( n \) discos.
  */
 
+/**
+ * The Ejercicio10 class provides a solution to the Tower of Hanoi problem using recursion.
+ * The main method demonstrates the solution by solving the problem for 3 disks.
+ * 
+ * The resolverTorre method prints the steps required to move 'n' disks from the origin rod to the destination rod using an auxiliary rod.
+ * 
+ * @param n       the number of disks to move
+ * @param origen  the rod from which to move the disks
+ * @param auxiliar the rod to use as an auxiliary during the move
+ * @param destino the rod to which to move the disks
+ */
 public class Ejercicio10 {
 
     public static void main(String[] args) {
