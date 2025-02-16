@@ -14,7 +14,9 @@ public class App {
         System.out.println("Fraccion con el constructor vacio = "+f1);
         System.out.println("Fraccion con el constructor con 2 parametros = "+f2);
         System.out.println("Fraccion con el constructor indicando solo numerador "+f3);
-        System.out.println(f2.sumar(f4));
+        
+
+        System.out.println("DENOMINADOR F2 = "+f2.getDenominador());
 
     }
 }
