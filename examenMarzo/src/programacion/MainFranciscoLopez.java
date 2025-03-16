@@ -46,6 +46,8 @@ class RecetarioGalletas {
 public class MainFranciscoLopez {
     public static void main(String[] args) {
 
+        
+
         RecetarioGalletas receta1 = new RecetarioGalletas(new GalletasChispas());
 
         System.out.println("Receta Galleta de chocolate");
